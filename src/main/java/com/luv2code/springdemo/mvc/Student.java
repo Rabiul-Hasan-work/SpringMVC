@@ -11,7 +11,17 @@ public class Student {
 	
 	private LinkedHashMap<String, String> countryOptions;
 	
+	public String[] getOperatingSystem() {
+		return operatingSystem;
+	}
+
+	public void setOperatingSystem(String[] operatingSystem) {
+		this.operatingSystem = operatingSystem;
+	}
+
 	private String favoriteLanguage;
+	
+	private String[] operatingSystem;
 	
 	public Student() {
 		
