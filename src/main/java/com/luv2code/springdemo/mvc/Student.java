@@ -11,6 +11,8 @@ public class Student {
 	
 	private LinkedHashMap<String, String> countryOptions;
 	
+	private String favoriteLanguage;
+	
 	public Student() {
 		
 		// populate country options: used ISO country code
@@ -21,6 +23,14 @@ public class Student {
 		countryOptions.put("DE", "Germany");
 		countryOptions.put("IN", "India");
 		countryOptions.put("US", "United States of America");
+	}
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
 	}
 
 	public LinkedHashMap<String, String> getCountryOptions() {
